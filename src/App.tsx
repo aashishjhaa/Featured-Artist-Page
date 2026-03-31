@@ -5,6 +5,7 @@
 
 import { useState } from 'react';
 import { Menu, User, Play, Clapperboard, Copyright, Music, AudioLines, X, ChevronDown } from 'lucide-react';
+import artistImage from '../public/artist.jpg';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -120,7 +121,7 @@ export default function App() {
       {/* Hero Image */}
       <div className="relative w-full h-[60vh] min-h-[450px] lg:h-full lg:w-1/2 lg:min-h-screen bg-[#1a0b0b] shrink-0">
         <img 
-          src="/artist.jpg" 
+          src={artistImage} 
           alt="Shifupro" 
           className="w-full h-full object-cover object-[center_15%] lg:object-[center_20%]"
           referrerPolicy="no-referrer"
